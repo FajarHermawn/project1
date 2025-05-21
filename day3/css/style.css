@@ -1,0 +1,42 @@
+.tech-stack-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 40px;
+  animation: scroll-left 10s linear infinite;
+  white-space: nowrap;
+  margin-left: 3rem;
+}
+
+.picture-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+}
+
+.picture-section img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.picture-section span {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #4B5563; /* Tailwind gray-600 */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
